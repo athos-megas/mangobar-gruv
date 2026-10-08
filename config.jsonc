@@ -7,7 +7,8 @@
     // "smooth-scrolling-threshold": 5.0,
 
     "modules-left": [
-        "workspaces",
+        "custom/applist",
+	"workspaces",
         "layout",
         "window"
     ],
@@ -96,7 +97,7 @@
         "icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
         "icon-charging": "󰂄",
         "icon-full": "󰁹",
-        "icon-ac": "",
+        "icon-ac": ""
         // "hide-on-ac": true
     },
     "clock#date": {
@@ -120,5 +121,10 @@
     "custom/text": {
 	"format": "ICXC NIKA 󰳵",
 	"on-click": "foot -e ~/Bible/cross.sh"
+    },
+
+    "custom/applist": {
+	"format": "󰀻",
+	"on-click": "rofi -show drun"
     }
 }

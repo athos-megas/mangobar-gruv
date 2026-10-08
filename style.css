@@ -59,8 +59,8 @@
 
 /* Overview mode */
 #overview {
-    background-color: #83a598;
-    color: #1b1a1a;
+    background-color: #d79921;
+    color: #282828;
 }
 
 /* Layout symbol */
@@ -133,6 +133,12 @@
     color: #282828;
 }
 
+#custom-applist {
+    margin: 0px 5px;
+    background-color: #282828;
+    color: #d79921;
+}
+
 #custom-text {
     background-color: #282828;
     color: #a89984;
@@ -155,4 +161,9 @@ menuitem {
 menuitem:hover {
     color: #1b1a1a;
     background-color: #b8bb26;
+}
+
+#hideclients {
+    color: #282828;
+    background-color: #d79921;
 }

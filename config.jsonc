@@ -49,7 +49,7 @@
     },
     "window": {
         "format": "{}",
-        "on-click": "bash ~/.config/mango/scripts/screenshot.sh",
+        "on-click": "grim ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H_%M_%S).png",
         "on-click-right": "python /home/wrq/tool/ocr.py",
 	"max-length": 500
     },
@@ -82,12 +82,12 @@
     },
     "pulseaudio": {
         "format": "{icon} {volume}% {bt}",
-        "format-muted": "󰝟 {volume}% {bt}",
-        "icons": ["󰝟", "󰕿", "󰕾"],
+        "format-muted": "󰖁 {volume}% {bt}",
+        "icons": ["󰕿", "󰖀", "󰕾"],
         // "icon-bluetooth": "󰂯",
-        "on-click": "pamixer -t",
-        "on-scroll-up": "pamixer -i 2",
-        "on-scroll-down": "pamixer -d 2"
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
     },
     "battery": {
         "format": "{icon} {percent}% {ac}",

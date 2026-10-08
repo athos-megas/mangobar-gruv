@@ -68,10 +68,12 @@
         "format": " {}"
     },
     "cpu": {
-        "format": " {load}%"
+        "format": " {load}%",
+	"on-click": "foot -e gotop"
     },
     "memory": {
-        "format": " {}%"
+        "format": " {}%",
+	"on-click": "foot -e gotop"
     },
     "backlight": {
         "format": "{icon} {percent}%",
